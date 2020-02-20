@@ -1,4 +1,4 @@
-# musou-301
+# musou-redirect
 
 > Redirect musou.tw to musou.watchout.tw
 
