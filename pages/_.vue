@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import articleTable from '~/data/musouMigration.json'
+import articleTable from '~/data/musou-migration.json'
 import defaultImg from 'watchout-common-assets/images/default.gif'
 
 function findMapping (target) {
