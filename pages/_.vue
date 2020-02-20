@@ -19,11 +19,9 @@ export default {
   beforeMount () {
     let mapping = null
     if (/^focuses\/[0-9]+$/.test(this.$route.params.pathMatch)) {
-      const target = this.$route.params.pathMatch.substring(8)
-      mapping = findMapping(target)
+      mapping = findMapping(this.$route.params.pathMatch.substring(8))
     } else if (/^videos\/[0-9]+$/.test(this.$route.params.pathMatch)) {
-      const target = this.$route.params.pathMatch.substring(7)
-      mapping = findMapping(target)
+      mapping = findMapping(this.$route.params.pathMatch.substring(7))
     }
     if (mapping) {
       window.location = `https://musou.watchout.tw/read/${mapping.fs_id}`
